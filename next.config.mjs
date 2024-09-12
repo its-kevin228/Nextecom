@@ -1,11 +1,9 @@
-/** @type {import('next').NextConfig} */
+import config from './config.js';
 
-const config =require('./config')
 const nextConfig = {
-    env:{
-        //
-        DB_URL : config.DB_URL,
-    }
+env: {
+    DB_URL: config.DB_URL,
+},
 };
 
 export default nextConfig;
